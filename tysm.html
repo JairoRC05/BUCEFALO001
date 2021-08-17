@@ -14,12 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="icon" href="images/bucefalo.ico" />
     <link rel="stylesheet" href="css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPBQ56H5EM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HPBQ56H5EM');
+    </script>
 </head>
 
 
 <body class="wallpaper-black">
 
-    <nav id="menu" class="navbar navbar-expand fixed-top navbar-dark bg-transparent container">
+    <nav id="menu" class="navbar navbar-expand fixed-top navbar-dark bg-transparent container" data-aos="face-down">
         <a class="navbar-brand " href="index.html">
             <img src="images/Bucefalo Banner 2.png" width="190px" height="45px" class="d-inline-block align-top" alt=""
                 loading="lazy">
@@ -50,7 +61,7 @@
         <img src="images/Tono/TonoPhone.png" class="img-fluid d-block d-md-none" alt="">
 
         <article>
-            <div class="container my-5">
+            <div class="container my-5" data-aos="fade-up">
                 <div class="row">
                     <div class="form-group col-lg-7 col-xl-6 order-2 order-lg-1">
                         <img src="images/Tono/PhoneTono.png" alt="Móvil" class="img-fluid">
@@ -108,7 +119,7 @@
             </div>
         </article>
 
-        <article class="container">
+        <article class="container" data-aos="face-up">
             <div class="row">
 
                 <div class="col-12 col-md-4 form-group"> <img src="images/Tono/TonoGame1.png" class="d-block w-100"
@@ -224,8 +235,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+        AOS.init();
+
+
+
+
         $(window).scroll(function () {
             if ($("#menu").offset().top > 50) {
                 $("#menu").addClass("bg-black");
