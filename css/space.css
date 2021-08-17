@@ -1,0 +1,194 @@
+.stars,
+.stars2,
+.stars3,
+.stars4,
+.bg-gra1,
+.clouds {
+    position: relative;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* .bg-mex {
+    backdrop-filter: blur(5px) !important;
+    /* background-color: #392d21 !important; */
+/* background-color: #00000079 !important;
+} */
+
+
+
+.bg-stars-one {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #483a29, #403325, #392d21);
+    background-size: contain;
+
+}
+
+.bg-stars-two {
+    z-index: 0;
+    background: #392d21 url('../images/Universo/StarBack.png') repeat top center;
+    background-size: contain;
+}
+
+
+.bg-stars-three {
+    background: url('../images/Universo/StarBack.png') repeat top center, linear-gradient(to bottom, #392d21, #392d21, #2d221a, #201813, #140d08);
+    background-size: contain;
+}
+
+.bg-stars-four {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(180deg, rgba(20, 13, 8, 1) 0%, rgba(20, 13, 8, 1) 0%, rgba(9, 13, 24, 1) 100%, rgba(0, 0, 0, 1) 574731%);
+    background-size: contain;
+}
+
+.bg-stars-five {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(180deg, rgba(20, 13, 8, 1) 0%, rgba(9, 13, 24, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 574731%);
+    background-size: contain;
+}
+
+.stars2 {
+    z-index: 0;
+    background: #140d08 url('../images/Universo/StarBack.png') repeat top center;
+
+}
+
+.stars3 {
+    z-index: 0;
+    background: #090d18 url('../images/Universo/StarBack.png') repeat top center;
+}
+
+.stars4 {
+    z-index: 0;
+    background: #000 url('../images/Universo/StarBack.png') repeat top center;
+}
+
+.twinkling {
+    z-index: 1;
+    background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+    animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+    z-index: 2;
+    background: transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+    animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+
+
+/* textos */
+.neon {
+    color: #f9f9c0;
+    text-shadow: 0px 2px 2px yellow;
+}
+
+.neon-1 {
+    color: #FF9C63;
+    text-shadow: 0px 2px 2px #FF4600;
+}
+
+.neon-white {
+    color: #fff;
+    text-shadow: 0px 2px 2px #fff;
+}
+
+.line {
+    background-color: #fff;
+}
+
+.line-neon {
+    background-color: #f9f9c0;
+}
+
+
+/*space 2*/
+
+.bg-black-s {
+    background: #000 url('../images/Universo/StarBack.png') repeat top center;
+    background-size: contain;
+
+}
+
+.bg-darker {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #000000, #150208, #200411, #290519, #330320);
+    background-size: contain;
+}
+
+.bg-rose {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #330320, #310223, #2e0126, #2b0029, #27002c);
+    background-size: contain;
+}
+
+.bg-blues {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #27002c, #240031, #1e0037, #14003d, #000044);
+    background-size: contain;
+}
+
+.bg-sky {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #000044, #001553, #002562, #00356f, #00457c, #5b6d9b);
+    background-size: contain;
+}
+
+.bg-sky2 {
+    background: url('../images/Universo/StarBack.png') repeat top center,
+        linear-gradient(to bottom, #5b6d9b, #6589b1, #76a6c4, #8ec1d6, #acdde7);
+    background-size: contain;
+}
+
+.bg-temple {
+    background-image: url('../images/Universo/BottomImage.png');
+    background-color: #acdde7;
+    background-size: cover;
+    /* Usamos cover para que nuestra imagen no se deforme al adaptarse a cada pantalla */
+    background-position: center;
+    /* Para centrar la imagen horizontal y verticalmente en el contenedor */
+    background-repeat: no-repeat;
+    /* Para que no repita la imagen */
+    padding: 180px;
+}
+
+.bg-mexikah {
+    background: #000 url('../images/Banner/InicioBottom.png');
+    background-size: cover;
+    /* Usamos cover para que nuestra imagen no se deforme al adaptarse a cada pantalla */
+    background-position: center;
+    /* Para centrar la imagen horizontal y verticalmente en el contenedor */
+    background-repeat: no-repeat;
+    /* Para que no repita la imagen */
+    height: 700px;
+}
+
+
+.bg-templo {
+    background-color: #acdde7;
+}

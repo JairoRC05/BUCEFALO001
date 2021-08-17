@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('nav.css');
+@import url('footer.css');
+@import url('buttons.css');
+@import url('slider.css');
+@import url('backgrounds.css');
+@import url('sizes.css');
+@import url('navbar.css');
+@import url('hamburguer.css');
+@import url('cards.css');
+@import url('charger.css');
+@import url('hover-min.css');
+@import url('btn-float.css');
+/* @import url('AOS.css'); */
+@import url('jumbotron.css');
+@import url('social.css');
+@import url('space.css');
+@import url('lightgallery.css');
+
+* {
+    transition: all .4s linear;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.5em;
+}
+
+
+
+
+.f-35 {
+    font-size: 35px;
+}
+
+
+.bg-dark {
+    background-color: #13171a !important;
+}
+
+.high-color {
+    font-family: 'Montserrat',
+        sans-serif;
+    color: #442463;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.rose {
+    color: palevioletred;
+}
+
+
+
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+
+.text-black {
+    color: #000 !important;
+}
+
+.area {
+    padding: 20px 0 55px 0;
+}
+
+.area-lg {
+    padding: 45px 0;
+}
+
+.area-mb {
+    padding-bottom: 45px;
+}
+
+.area-small {
+    padding: 100px 0 50px 0;
+}
+
+article {
+    text-align: center;
+}
+
+article p {
+    text-align: left;
+}
+
+
+
+.round {
+    border-radius: 5px;
+}
+
+.sub {
+    text-transform: none;
+}
+
+
+
+header h3 {
+    padding: 25px 0 20px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+.container {
+    width: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container-fluid {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1980px) {
+
+    .container {
+        max-width: 1620px;
+    }
+
+
+    /* .mont {
+        font-size: 40px;
+    }
+
+    .exo {
+        font-size: 45px;
+    } */
+
+}
+
+
+@media (max-width: 1024px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    p {
+        font-size: 1em;
+    }
+
+    .exo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+
+footer,
+li a {
+    text-decoration: none;
+}
+
+
+.characters h3 {
+    text-transform: inherit;
+}
+
+.news h3 {
+    text-transform: inherit;
+}
+
+.news p {
+    font-size: 12px;
+}
+
+/* Tamaño del scroll */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 10px;
+}
+
+/* Estilos barra (thumb) de scroll */
+::-webkit-scrollbar-thumb {
+    background: rgb(134, 134, 134);
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+::-webkit-scrollbar-track {
+    background: #080606;
+
+}
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+    background: #000000;
+}
+
+
+.not-active {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    font-family: 'Bebas Neue',
+        cursive;
+}
+
+
+.game-play {
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+
+}
+
+.game-play img {
+    width: 90%;
+    left: 2px;
+}
+
+
+.name-play {
+    position: absolute;
+    left: 0;
+    background-color: #13171a;
+    padding: 20px;
+    color: #fff;
+    width: 35%;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.text-play {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    background-color: #13171ade;
+    padding: 20px;
+    width: 40%;
+    text-align: left;
+    z-index: 1;
+}
+
+
+.btn-game {
+    background-color: yellow !important;
+    position: absolute;
+    text-decoration: none;
+    padding: 10px;
+    right: 15px;
+    width: 30%;
+    z-index: 2;
+    border-radius: 25px;
+
+}
+
+.btn-game-rose {
+    background-color: rgb(218, 15, 133) !important;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    padding: 10px;
+    width: 30%;
+    z-index: 2;
+    border-radius: 25px;
+
+}
+
+
+.name-play-in {
+    position: absolute;
+    right: 0;
+    background-color: #13171a;
+    padding: 20px;
+    color: #fff;
+    width: 35%;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.text-play-in {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: #13171ade;
+    padding: 20px;
+    width: 40%;
+    text-align: left;
+    z-index: 1;
+}
+
+
+
+/* carousel */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* Display 3 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+
+
+.card {
+    background-color: #000 !important;
+    border-radius: 30px;
+
+
+}
+
+.card-text {
+    text-align: center;
+    font-family: 'Bebas Neue',
+        cursive;
+}
+
+.card-title {
+    color: white !important;
+    margin-bottom: 2px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .card {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        margin: 25px;
+    }
+
+    .card-body {
+        padding: 0 0 5px;
+    }
+
+    .card-title {
+        margin-bottom: 1px;
+    }
+
+    .game-play img {
+        width: 100%;
+    }
+
+
+    .name-play {
+        position: absolute;
+        left: 0;
+        background-color: #13171a;
+        padding: 20px;
+        color: #fff;
+        width: 35%;
+        text-align: center;
+        z-index: 1;
+        display: none;
+
+    }
+
+    .text-play {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        background-color: #13171ade;
+        padding: 20px;
+        width: 40%;
+        text-align: left;
+        z-index: 1;
+        display: none;
+    }
+
+
+    .btn-game {
+        background-color: yellow !important;
+        position: absolute;
+        text-decoration: none;
+        padding: 10px;
+        right: 15px;
+        width: 30%;
+        z-index: 2;
+        border-radius: 25px;
+
+    }
+
+    .btn-game-rose {
+        background-color: rgb(218, 15, 133) !important;
+        color: #fff;
+        position: absolute;
+        text-decoration: none;
+        padding: 10px;
+        width: 30%;
+        z-index: 2;
+        border-radius: 25px;
+
+    }
+
+
+    .name-play-in {
+        position: absolute;
+        right: 0;
+        background-color: #13171a;
+        padding: 20px;
+        color: #fff;
+        width: 35%;
+        text-align: center;
+        z-index: 1;
+        display: none;
+
+    }
+
+    .text-play-in {
+        position: absolute;
+        display: none;
+        left: 0;
+        bottom: 20px;
+        background-color: #13171ade;
+        padding: 20px;
+        width: 40%;
+        text-align: left;
+        z-index: 1;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 28px;
+    }
+
+}
+
+
+
+.btn-yellow {
+    background-color: yellow !important;
+
+    text-decoration: none;
+    padding: 10px;
+    right: 15px;
+    width: 30%;
+    z-index: 2;
+    border-radius: 25px;
+
+}
+
+.btn-rose {
+    background-color: rgb(218, 15, 133) !important;
+    color: #fff;
+
+    text-decoration: none;
+    padding: 10px;
+    width: 30%;
+    z-index: 2;
+    border-radius: 25px;
+
+}
+
+
+
+
+/* Social CSS */
+
+.social {
+    position: fixed;
+    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    right: 0;
+    /* Establecemos la barra en la izquierda */
+    top: 350px;
+    /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000;
+    /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    width: 45px;
+    ;
+    /* Establecemos una transición a todas las propiedades */
+}
+
+.social ul li .facebook {
+    background: #3b5998;
+}
+
+/* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .twitter {
+    background: #00abf0;
+}
+
+.social ul li .whatsapp {
+    background: #42c506;
+    ;
+}
+
+.social ul li .messenger {
+    background: #0078FF;
+    ;
+}
+
+.social ul li .email {
+    background: #E87127;
+    ;
+}
+
+
+.social ul li .telegram {
+    background: #00abf0;
+}
+
+.social ul li .youtube {
+    background: #ae181f;
+}
+
+.social ul li a:hover {
+    padding: 10px 30px;
+    border-radius: 0 15px 15px 0;
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+/* li:first-child a {
+    border-radius: 0 15px 0 0;
+}
+
+li:last-child a {
+    border-radius: 0 0 15px 0;
+} */
+
+/* Social CSS End */
+
+
+
+@media (max-width: 768px) {
+
+    .social {
+        position: fixed;
+        /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+
+        /* Establecemos la barra en la izquierda */
+        bottom: 1px;
+        top: 350px;
+        /* Bajamos la barra 200px de arriba a abajo */
+        z-index: 2000;
+        /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+    }
+
+    #myCarousel .carousel-inner .carousel-item {
+        margin-right: 0%;
+    }
+
+    #myCarousel1 .carousel-inner .carousel-item {
+        margin-right: 0%;
+    }
+}
+
+@media (max-width: 180px) and (max-width: 767px) {
+    #myCarousel .carousel-inner div.carousel-item {
+        margin-right: 100%;
+    }
+
+    #myCarousel1 .carousel-inner div.carousel-item {
+        margin-right: 100%;
+    }
+}

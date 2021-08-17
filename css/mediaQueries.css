@@ -1,0 +1,17 @@
+.size {
+    height: 50vh !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .size {
+        height: 70vh !important;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .size {
+        height: 30vh !important;
+
+    }
+}

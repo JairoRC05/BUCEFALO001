@@ -1,0 +1,15 @@
+.img-svg {
+    transform: scale(.8);
+}
+
+.img-svg-1 {
+    transform: scale(1);
+}
+
+.img-svg-circle {
+    transform: scale(.6);
+}
+
+.img-svg-graphic {
+    transform: scale(1.3);
+}
